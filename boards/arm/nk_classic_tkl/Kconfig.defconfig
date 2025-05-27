@@ -1,0 +1,25 @@
+# Copyright (c) 2025 Yiancar
+# SPDX-License-Identifier: MIT
+
+if BOARD_NK_CLASSIC_TKL
+
+config ZMK_KEYBOARD_NAME
+    default "NK Classic TKL"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config BT_CTLR
+    default BT
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
+endif # BOARD_NK_CLASSIC_TKL

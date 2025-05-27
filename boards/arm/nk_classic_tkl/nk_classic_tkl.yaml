@@ -1,0 +1,14 @@
+identifier: nk_classic_tkl
+name: nk_classic_tkl
+type: board
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog

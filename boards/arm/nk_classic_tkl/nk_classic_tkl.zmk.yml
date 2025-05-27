@@ -1,0 +1,11 @@
+file_format: "1"
+id: nk_classic_tkl
+name: NK Classic TKL
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+features:
+  - keys
+url: https://novelkeys.com/
