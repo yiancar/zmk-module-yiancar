@@ -10,7 +10,6 @@
     physical_layout0: physical_layout_0 {
         compatible = "zmk,physical-layout";
         display-name = "TKL ANSI Tsangan";
-
         kscan = <&kscan0>;
         transform = <&default_transform>;
 
