@@ -8,4 +8,5 @@ outputs:
   - ble
 features:
   - keys
+  - underglow
 url: https://novelkeys.com/
