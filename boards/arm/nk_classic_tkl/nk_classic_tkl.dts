@@ -20,8 +20,6 @@
         zmk,kscan = &kscan0;
         zmk,battery = &vbatt;
         zmk,underglow = &led_strip;
-
-        // zmk,physical-layout = &sixty_percent_ansi_split_bs_rshift;
     };
 
     kscan0: kscan {
@@ -81,7 +79,7 @@
         };
     };
 
-    ext-power {
+    EXT_POWER {
         compatible = "zmk,ext-power-generic";
         control-gpios = <&gpio0 4 GPIO_ACTIVE_HIGH>;
     };
