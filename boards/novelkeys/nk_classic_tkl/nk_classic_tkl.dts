@@ -217,34 +217,34 @@ zephyr_udc0: &usbd {
         };
     };
 
-// &flash0 {
+&flash0 {
     /*
      * For more information, see:
      * http://docs.zephyrproject.org/latest/devices/dts/flash_partitions.html
      */
-    // partitions {
-    //     compatible = "fixed-partitions";
-    //     #address-cells = <1>;
-    //     #size-cells = <1>;
+    partitions {
+        compatible = "fixed-partitions";
+        #address-cells = <1>;
+        #size-cells = <1>;
 
-    //     sd_partition: partition@0 {
-    //         label = "mbr";
-    //         reg = <0x00000000 0x00001000>;
-    //     };
+        sd_partition: partition@0 {
+            label = "mbr";
+            reg = <0x00000000 0x00001000>;
+        };
 
-    //     code_partition: partition@1000 {
-    //         label = "code_partition";
-    //         reg = <0x00001000 0x000d3000>;
-    //     };
+        code_partition: partition@1000 {
+            label = "code_partition";
+            reg = <0x00001000 0x000d3000>;
+        };
 
-    //     storage_partition: partition@d4000 {
-    //         label = "storage";
-    //         reg = <0x000d4000 0x00020000>;
-    //     };
+        storage_partition: partition@d4000 {
+            label = "storage";
+            reg = <0x000d4000 0x00020000>;
+        };
 
-    //     boot_partition: partition@f4000 {
-    //         label = "adafruit_boot";
-    //         reg = <0x000f4000 0x0000c000>;
-    //     };
-    // };
+        boot_partition: partition@f4000 {
+            label = "adafruit_boot";
+            reg = <0x000f4000 0x0000c000>;
+        };
+    };
 };
