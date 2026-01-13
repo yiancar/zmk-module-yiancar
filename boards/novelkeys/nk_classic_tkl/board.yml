@@ -1,0 +1,5 @@
+board:
+  name: nk_classic_tkl
+  vendor: novelkeys
+  socs:
+    - name: nrf52840

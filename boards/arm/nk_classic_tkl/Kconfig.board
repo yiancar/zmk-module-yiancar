@@ -1,6 +1,0 @@
-# Copyright (c) 2025 Yiancar
-# SPDX-License-Identifier: MIT
-
-config BOARD_NK_CLASSIC_TKL
-    bool "nk_classic_tkl"
-    depends on SOC_NRF52840_QIAA
