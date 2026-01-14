@@ -14,6 +14,6 @@
 ---
 include:
   - board: nk_classic_tkl
-    snippet: studio-rpc-usb-uart
+    snippet: studio-rpc-usb-uart, zmk-usb-loggin
     cmake-args: -DCONFIG_ZMK_STUDIO=y
     artifact-name: nk_classic_tkl-studio
