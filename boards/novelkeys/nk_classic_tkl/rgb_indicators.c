@@ -11,6 +11,7 @@
 
 bool is_capslock_on;
 uint8_t current_brightness;
+bool underglow_brightness_known;
 
 static int hid_indicator_change_listener(const zmk_event_t *eh);
 
@@ -23,6 +24,10 @@ static int hid_indicator_change_listener(const zmk_event_t *eh){
     struct zmk_rgb_underglow_tick_event *underglow_ev = as_zmk_rgb_underglow_tick_event(eh);
 
     if ((hid_ev = as_zmk_hid_indicators_changed(eh)) != NULL) {
+        // Ignore indicator events until we have a valid brightness sample from underglow.
+        if (!underglow_brightness_known) {
+            return ZMK_EV_EVENT_BUBBLE;
+        }
         if (hid_ev->indicators & (1 << 1)){
             is_capslock_on = true;
             if (current_brightness == 0) {
@@ -35,6 +40,7 @@ static int hid_indicator_change_listener(const zmk_event_t *eh){
             }
         }
     } else if ((underglow_ev = as_zmk_rgb_underglow_tick_event(eh)) != NULL) {
+        underglow_brightness_known = true;
         current_brightness = underglow_ev->state.color.b;
         if (is_capslock_on) {
             for (uint8_t i = 50; i <= 55; i++) {
