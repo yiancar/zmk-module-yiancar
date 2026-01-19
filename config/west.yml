@@ -2,10 +2,15 @@ manifest:
   remotes:
     - name: zmkfirmware
       url-base: https://github.com/yiancar
+    - name: sekigon-gonnoc
+      url-base: https://github.com/sekigon-gonnoc
   projects:
     - name: zmk
       remote: zmkfirmware
       revision: rgb_underglow_tick_listener
       import: app/west.yml
+    - name: zmk-feature-status-led
+      remote: sekigon-gonnoc
+      revision: main
   self:
     path: config

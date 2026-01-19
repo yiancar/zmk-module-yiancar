@@ -1,0 +1,12 @@
+file_format: "1"
+id: nk65_gen2
+name: NK65 Gen2
+type: board
+arch: arm
+outputs:
+  - usb
+  - ble
+features:
+  - keys
+  - underglow
+url: https://novelkeys.com/

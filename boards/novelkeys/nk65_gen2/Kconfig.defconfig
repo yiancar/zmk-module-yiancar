@@ -1,0 +1,25 @@
+# Copyright (c) 2026 Yiancar
+# SPDX-License-Identifier: MIT
+
+if BOARD_NK65_GEN2
+
+config ZMK_KEYBOARD_NAME
+    default "NK65 Gen2"
+
+if USB_DEVICE_STACK
+
+config USB_NRFX
+    default y
+
+endif # USB_DEVICE_STACK
+
+config ZMK_BLE
+    default y
+
+config ZMK_USB
+    default y
+
+config ZMK_STATUS_LED
+    default y
+
+endif # BOARD_NK65_GEN2

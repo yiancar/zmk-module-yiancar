@@ -1,0 +1,14 @@
+identifier: nk65_gen2
+name: nk65_gen2
+type: board
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+supported:
+  - adc
+  - usb_device
+  - ble
+  - ieee802154
+  - pwm
+  - watchdog
