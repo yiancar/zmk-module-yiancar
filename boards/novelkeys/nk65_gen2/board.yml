@@ -2,4 +2,4 @@ board:
   name: nk65_gen2
   vendor: novelkeys
   socs:
-    - name: nrf52833
+    - name: nrf52840
