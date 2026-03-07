@@ -197,13 +197,13 @@ zephyr_udc0: &usbd {
     /* App starts at 0x1000 for Adafruit UF2 */
     code_partition: partition@1000 {
         label = "code_partition";
-        reg = <0x00001000 0x00063000>; /* 396 KiB */
+        reg = <0x00001000 0x0006B000>; /* 428 KiB */
     };
 
     /* Leave the remaining space before the bootloader for storage */
-    storage_partition: partition@64000 {
+    storage_partition: partition@6c000 {
         label = "storage";
-        reg = <0x00064000 0x00010000>; /* 64 KiB */
+        reg = <0x0006C000 0x00008000>; /* 32 KiB */
     };
 
     /* Adafruit UF2 bootloader at end of flash */
