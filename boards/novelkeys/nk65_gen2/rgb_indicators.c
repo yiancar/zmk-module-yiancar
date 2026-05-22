@@ -69,12 +69,12 @@ static int hid_indicator_change_listener(const zmk_event_t *eh){
         current_brightness = underglow_ev->state.color.b;
         
         if (is_capslock_on) {
-            underglow_ev->pixels[66] = (struct led_rgb){r : 38, g : 29, b : 2};
+            underglow_ev->pixels[66] = (struct led_rgb){r : 20, g : 10, b : 1};
         } else {
             underglow_ev->pixels[66] = (struct led_rgb){r : 0, g : 0, b : 0};
         }
         if (zmk_keymap_layer_active(1)) {
-            underglow_ev->pixels[67] = (struct led_rgb){r : 13, g : 18, b : 6};
+            underglow_ev->pixels[67] = (struct led_rgb){r : 21, g : 10, b : 30};
         } else {
             underglow_ev->pixels[67] = (struct led_rgb){r : 0, g : 0, b : 0};
         }
