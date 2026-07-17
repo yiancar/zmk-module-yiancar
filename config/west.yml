@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: rgb_underglow_tick_listener
+      revision: 23c12f6cec55af51c52e3ed63eabe11d15875609
       import: app/west.yml
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
