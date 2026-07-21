@@ -7,7 +7,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: a0849afe40d99a6e8a5ac63106dc69c1c4bb69e4
+      revision: 8a26c29a1c6f77fb216f85b202df15c5585108e3
       import: app/west.yml
     - name: zmk-feature-status-led
       remote: sekigon-gonnoc
