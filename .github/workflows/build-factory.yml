@@ -1,0 +1,11 @@
+name: Build NK65 Factory Firmware
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@main
+    with:
+      build_matrix_path: build-factory.yaml
+      archive_name: nk65-gen2-factory

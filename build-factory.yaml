@@ -1,0 +1,6 @@
+---
+include:
+  - board: nk65_gen2
+    snippet: studio-factory-unlock-once
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    artifact-name: nk65_gen2-factory
